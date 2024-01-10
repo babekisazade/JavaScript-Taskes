@@ -42,25 +42,88 @@ let rublHesab = 1200;
 let dollarHesab = 20;
 let mezenne = 75;
 
-console.log(cemiMiqdar(rublHesab, dollarHesab, mezenne));
-
-
-
-
-
-
-
+console.log(cemiMiqdar(rublHesab, dollarHesab, mezenne));
 
 
 //4
 
+function numberToText(num) {
+    if (num.length === 1) {
+        console.log(teklik(num));
+    }
+    else if (num.length === 2 && num[1] === "0") {
+        console.log(onluq(num[0]) + " " + teklik(num[1]));
+    }
+}
 
 
 
+numberToText("52")
 
 
 
+//teklik
 
+function teklik(param) {
+
+    switch (num) {
+        case "1":
+            return "Bir"
+
+        case "2":
+            return "Iki"
+
+        case "3":
+            return "Uc"
+
+        case "4":
+            return "4"
+
+        case "5":
+            return "Besh"
+
+        case "6":
+            return "Alti"
+
+        case "7":
+            return "Yeddi"
+
+        default:
+            break;
+    }
+}
+
+
+//onluq
+
+function onluq(param) {
+
+    switch (num) {
+        case "1":
+            return "On"
+
+        case "2":
+            return "Iyirmi"
+
+        case "3":
+            return "Otuz"
+
+        case "4":
+            return "Qirx"
+
+        case "5":
+            return "Elli"
+
+        case "6":
+            return "Altmish"
+
+        case "7":
+            return "Yetmish"
+
+        default:
+            break;
+    }
+}
 
 
 
@@ -105,18 +168,18 @@ console.log("Nəticə: " + netice);
 
 function isEven(number) {
     if (typeof number !== 'number') {
-      return 'Eded teleb olunur.';
+        return 'Eded teleb olunur.';
     }
-  
-    return number % 2 === 0;
-  }
-  
-  //funksiyani sınamaq üçün nümunə
-  const exampleNumber = 42;
-  const result = isEven(exampleNumber);
 
-  //konsolda nəticə: true görünər.
-  console.log(result);
+    return number % 2 === 0;
+}
+
+//funksiyani sınamaq üçün nümunə
+const exampleNumber = 42;
+const result = isEven(exampleNumber);
+
+//konsolda nəticə: true görünər.
+console.log(result);
 
 //10
 
